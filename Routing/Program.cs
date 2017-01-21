@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Velyo.Google.Services;
 
+
 namespace Routing {
     class Program {
 
@@ -78,6 +79,7 @@ namespace Routing {
             // iterate through addresses and generate a location
             List<Location> locations = new List<Location>();
 
+            // currently limited to 10 deliveries - TESTING
             for (int index = 0; index < 10; index ++) {
                 Location location = new Location();
 
@@ -98,7 +100,7 @@ namespace Routing {
             }
 
             // create vehicles
-            Vehicle[] vehicles = new Vehicle[10];
+            Vehicle[] vehicles = new Vehicle[3];
             for (int index = 0; index < vehicles.Length; index ++) {
                 vehicles[index] = new Vehicle();
             }
